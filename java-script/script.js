@@ -9,12 +9,14 @@ Abbiamo visto qualcosa di particolare che possiamo usare?*/
 console.clear()
 
 for (let i = 1; i <= 100; i++){
-    if(i % 3 === 0){
-    console.log("fizz")
+    if(i % 3 === 0 && i % 5 === 0){
+        console.log("fizzbuzz");
+    } else if(i % 3 === 0){
+        console.log("fizz");
     } else if(i % 5 === 0){
-        console.log("buzz")
+        console.log("buzz");
     }
-    else{
+       else{
         console.log(i);
     }
 
